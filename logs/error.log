@@ -6,3 +6,4 @@
 {"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mPort 5001 is already in use\u001b[39m","timestamp":"2026-02-04 11:57:32:5732"}
 {"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mUnhandled Rejection at:\u001b[39m","timestamp":"2026-02-04 15:00:03:03"}
 {"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mUnhandled Rejection at:\u001b[39m","timestamp":"2026-02-04 15:40:39:4039"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mPort 5001 is already in use\u001b[39m","timestamp":"2026-02-04 16:45:52:4552"}

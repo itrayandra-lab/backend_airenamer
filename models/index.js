@@ -1,7 +1,16 @@
 const { sequelize } = require('../config/database');
+
+// Import models in the correct order
 const User = require('./User');
 const Subscription = require('./Subscription');
 const UsageTracking = require('./UsageTracking');
+
+// Ensure all models are properly initialized
+console.log('Models loaded:', {
+  User: User.name,
+  Subscription: Subscription.name,
+  UsageTracking: UsageTracking.name
+});
 
 // Define associations
 User.hasMany(Subscription, {
