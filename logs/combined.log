@@ -1,0 +1,154 @@
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:12:25:1225"}
+{"address":"::1","code":"EACCES","errno":-4092,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mServer error: listen EACCES: permission denied ::1:5000\u001b[39m","port":5000,"stack":"Error: listen EACCES: permission denied ::1:5000\n    at Server.setupListenHandle [as _listen2] (node:net:1918:21)\n    at listenInCluster (node:net:1997:12)\n    at GetAddrInfoReqWrap.callback (node:net:2206:7)\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:133:8)","syscall":"listen","timestamp":"2026-02-04 10:12:25:1225"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:13:14:1314"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:13:14:1314"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:26:11:2611"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mPort 5001 is already in use\u001b[39m","timestamp":"2026-02-04 10:26:11:2611"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:26:34:2634"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mPort 5001 is already in use\u001b[39m","timestamp":"2026-02-04 10:26:34:2634"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:34:35:3435"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:34:35:3435"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:34:51:3451"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:34:52:3452"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:34:58:3458"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:34:58:3458"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:35:19:3519"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:35:19:3519"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:52:35:5235"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:52:35:5235"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:54:05:545"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:54:05:545"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:54:45:5445"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:54:45:5445"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:54:46:5446"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:54:46:5446"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:54:49:5449"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:54:49:5449"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:54:50:5450"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:54:50:5450"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:54:53:5453"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:54:53:5453"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:54:56:5456"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:54:56:5456"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:54:59:5459"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:54:59:5459"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:55:02:552"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:55:02:552"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:55:04:554"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:55:04:554"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:55:06:556"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:55:06:556"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:55:07:557"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:55:07:557"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:55:10:5510"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:55:10:5510"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:55:13:5513"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:55:13:5513"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:55:38:5538"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:55:38:5538"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:56:33:5633"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:56:33:5633"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:56:47:5647"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:56:47:5647"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:57:17:5717"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:57:17:5717"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 10:58:06:586"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 10:58:06:586"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mFailed to send verification email: nodemailer.createTransporter is not a function\u001b[39m","stack":"TypeError: nodemailer.createTransporter is not a function\n    at createTransporter (C:\\Users\\user\\Documents\\PYTHON\\AIRENAMER\\express-backend\\utils\\emailService.js:6:21)\n    at sendVerificationEmail (C:\\Users\\user\\Documents\\PYTHON\\AIRENAMER\\express-backend\\utils\\emailService.js:18:25)\n    at C:\\Users\\user\\Documents\\PYTHON\\AIRENAMER\\express-backend\\routes\\auth.js:690:31\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","timestamp":"2026-02-04 11:04:09:49"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mFailed to send verification email: nodemailer.createTransporter is not a function\u001b[39m","stack":"TypeError: nodemailer.createTransporter is not a function\n    at createTransporter (C:\\Users\\user\\Documents\\PYTHON\\AIRENAMER\\express-backend\\utils\\emailService.js:6:21)\n    at sendVerificationEmail (C:\\Users\\user\\Documents\\PYTHON\\AIRENAMER\\express-backend\\utils\\emailService.js:18:25)\n    at C:\\Users\\user\\Documents\\PYTHON\\AIRENAMER\\express-backend\\routes\\auth.js:690:31\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)","timestamp":"2026-02-04 11:04:21:421"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 11:04:57:457"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 11:04:57:457"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 11:05:04:54"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 11:05:04:54"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 11:05:22:522"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 11:05:22:522"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mVerification email sent to poetraarromadhon56@gmail.com\u001b[39m","messageId":"<04e024f6-31aa-f02d-fb4a-a91d436d0c02@gmail.com>","timestamp":"2026-02-04 11:05:52:552"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 11:06:09:69"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 11:06:09:69"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 11:07:17:717"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 11:07:17:717"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 11:24:09:249"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 11:24:09:249"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 11:24:19:2419"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 11:24:19:2419"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 11:24:36:2436"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 11:24:36:2436"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 11:24:43:2443"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 11:24:43:2443"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 11:25:16:2516"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 11:25:16:2516"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 11:27:00:270"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 11:27:00:270"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 11:27:32:2732"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 11:27:32:2732"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 11:56:01:561"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 11:56:01:561"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 11:57:32:5732"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mPort 5001 is already in use\u001b[39m","timestamp":"2026-02-04 11:57:32:5732"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mReceived SIGINT, shutting down gracefully\u001b[39m","timestamp":"2026-02-04 11:58:48:5848"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 12:00:10:010"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 12:00:10:010"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mVerification email sent to 12221436@bsi.ac.id\u001b[39m","messageId":"<92868400-b324-8479-2956-c4c9a7a136d0@gmail.com>","timestamp":"2026-02-04 12:03:18:318"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mVerification email sent to 12221436@bsi.ac.id\u001b[39m","messageId":"<158c2e2f-6892-a85e-78a1-500e9917545c@gmail.com>","timestamp":"2026-02-04 12:03:48:348"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mVerification email sent to 12221436@bsi.ac.id\u001b[39m","messageId":"<e80b2132-6fa5-b366-40d7-0feab639fb9a@gmail.com>","timestamp":"2026-02-04 12:05:19:519"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mVerification email sent to kulitechno@gmail.com\u001b[39m","messageId":"<c2aedd79-4042-d9bb-21bf-f60eea630726@gmail.com>","timestamp":"2026-02-04 12:08:57:857"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 12:21:40:2140"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 12:21:40:2140"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 12:45:54:4554"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 12:45:54:4554"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 13:15:06:156"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 13:15:06:156"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 14:29:17:2917"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 14:29:17:2917"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 14:36:54:3654"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 14:36:54:3654"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 14:43:51:4351"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 14:43:51:4351"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 14:49:45:4945"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 14:49:45:4945"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mUnhandled Rejection at:\u001b[39m","timestamp":"2026-02-04 15:00:03:03"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 15:03:56:356"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 15:03:56:356"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 15:04:06:46"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 15:04:06:46"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 15:04:40:440"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 15:04:40:440"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 15:05:21:521"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 15:05:21:521"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 15:07:07:77"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 15:07:07:77"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mWelcome email sent to rizkikuliit@gmail.com\u001b[39m","messageId":"<c4d8d63f-d26b-ca65-d3c0-91e7fde6d33e@gmail.com>","timestamp":"2026-02-04 15:07:31:731"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 15:07:37:737"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 15:07:37:737"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mVerification email sent to rizkikuliit@gmail.com\u001b[39m","messageId":"<e7e955a6-92eb-e9c4-4d35-55eb52779e50@gmail.com>","timestamp":"2026-02-04 15:13:25:1325"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 15:17:11:1711"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 15:17:11:1711"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 15:17:28:1728"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 15:17:28:1728"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 15:17:36:1736"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 15:17:36:1736"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRate limit exceeded for IP: ::1\u001b[39m","timestamp":"2026-02-04 15:22:22:2222"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRate limit exceeded for IP: ::1\u001b[39m","timestamp":"2026-02-04 15:22:22:2222"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRate limit exceeded for IP: ::1\u001b[39m","timestamp":"2026-02-04 15:22:22:2222"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRate limit exceeded for IP: ::1\u001b[39m","timestamp":"2026-02-04 15:23:54:2354"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRate limit exceeded for IP: ::1\u001b[39m","timestamp":"2026-02-04 15:23:55:2355"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRate limit exceeded for IP: ::1\u001b[39m","timestamp":"2026-02-04 15:23:55:2355"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRate limit exceeded for IP: ::1\u001b[39m","timestamp":"2026-02-04 15:24:14:2414"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRate limit exceeded for IP: ::1\u001b[39m","timestamp":"2026-02-04 15:24:23:2423"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRate limit exceeded for IP: ::1\u001b[39m","timestamp":"2026-02-04 15:24:34:2434"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRate limit exceeded for IP: ::1\u001b[39m","timestamp":"2026-02-04 15:24:35:2435"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 15:25:33:2533"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 15:25:33:2533"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 15:26:00:260"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 15:26:00:260"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mUnhandled Rejection at:\u001b[39m","timestamp":"2026-02-04 15:40:39:4039"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 15:44:25:4425"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 15:44:25:4425"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 15:45:00:450"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 15:45:00:450"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 15:45:10:4510"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 15:45:10:4510"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 16:15:49:1549"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 16:15:49:1549"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 16:32:55:3255"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 16:32:55:3255"}
