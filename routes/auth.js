@@ -50,9 +50,7 @@ const registerValidation = [
   
   body('password')
     .isLength({ min: 8 })
-    .withMessage('Password must be at least 8 characters long')
-    .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#+\-_=])[A-Za-z\d@$!%*?&#+\-_=]/)
-    .withMessage('Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character'),
+    .withMessage('Password must be at least 8 characters long'),
   
   body('confirmPassword')
     .custom((value, { req }) => {
@@ -525,12 +523,11 @@ router.post('/reset-password', async (req, res) => {
       });
     }
 
-    // Validate password strength
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    if (!passwordRegex.test(password)) {
+    // Validate password strength - simplified: hanya minimal 8 karakter
+    if (password.length < 8) {
       return res.status(400).json({
         success: false,
-        message: 'Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character'
+        message: 'Password must be at least 8 characters long'
       });
     }
 
@@ -602,12 +599,11 @@ router.post('/change-password', authenticate, async (req, res) => {
       });
     }
 
-    // Validate password strength
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    if (!passwordRegex.test(newPassword)) {
+    // Validate password strength - simplified: hanya minimal 8 karakter
+    if (newPassword.length < 8) {
       return res.status(400).json({
         success: false,
-        message: 'New password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character'
+        message: 'New password must be at least 8 characters long'
       });
     }
 

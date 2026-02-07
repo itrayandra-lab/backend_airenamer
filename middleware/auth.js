@@ -62,13 +62,17 @@ const authenticate = async (req, res, next) => {
         });
       }
       
-      // Update last active time
-      try {
-        user.last_active_at = new Date();
-        await user.save();
-      } catch (saveError) {
-        // Log the error but don't fail the authentication
-        logger.warn('Failed to update last_active_at:', saveError);
+      // Update last active time (skip for certain routes to avoid conflicts)
+      const skipLastActiveUpdate = req.path.includes('/2fa/');
+      
+      if (!skipLastActiveUpdate) {
+        try {
+          user.last_active_at = new Date();
+          await user.save();
+        } catch (saveError) {
+          // Log the error but don't fail the authentication
+          logger.warn('Failed to update last_active_at:', saveError);
+        }
       }
       
       // Add user to request object

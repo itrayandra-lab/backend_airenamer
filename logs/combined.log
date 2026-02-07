@@ -156,3 +156,59 @@
 {"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 16:45:40:4540"}
 {"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 16:45:52:4552"}
 {"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mPort 5001 is already in use\u001b[39m","timestamp":"2026-02-04 16:45:52:4552"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-04 16:49:21:4921"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-04 16:49:21:4921"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-05 08:37:05:375"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-05 08:37:05:375"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-06 01:47:50:4750"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-06 01:47:50:4750"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-06 16:29:50:2950"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-06 16:29:50:2950"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 08:50:46:5046"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-07 08:50:46:5046"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 10:32:15:3215"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-07 10:32:15:3215"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mPassword reset email sent to poetraarromadhon56@gmail.com\u001b[39m","messageId":"<3cd83d4d-ed3a-807a-2c77-b48360a7eb7c@gmail.com>","timestamp":"2026-02-07 10:36:49:3649"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mPassword reset email sent to poetraarromadhon56@gmail.com\u001b[39m","messageId":"<22fcaba8-672a-3105-88b1-2a8141c6218b@gmail.com>","timestamp":"2026-02-07 10:44:05:445"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 11:08:48:848"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-07 11:08:48:848"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 11:09:03:93"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-07 11:09:03:93"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 11:09:05:95"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-07 11:09:05:95"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 11:09:28:928"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-07 11:09:28:928"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mUnhandled Rejection at:\u001b[39m","timestamp":"2026-02-07 11:10:48:1048"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 11:12:04:124"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-07 11:12:04:124"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mUnhandled Rejection at:\u001b[39m","timestamp":"2026-02-07 11:12:12:1212"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 11:13:04:134"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-07 11:13:04:134"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mUnhandled Rejection at:\u001b[39m","timestamp":"2026-02-07 11:13:09:139"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 11:14:39:1439"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-07 11:14:39:1439"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 11:14:51:1451"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-07 11:14:51:1451"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 11:14:55:1455"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-07 11:14:55:1455"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 11:15:00:150"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-07 11:15:00:150"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 11:15:24:1524"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mPort 5001 is already in use\u001b[39m","timestamp":"2026-02-07 11:15:24:1524"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 11:16:19:1619"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-07 11:16:19:1619"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 11:17:10:1710"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mPort 5001 is already in use\u001b[39m","timestamp":"2026-02-07 11:17:10:1710"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 11:17:54:1754"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-07 11:17:54:1754"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 11:59:30:5930"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mPort 5001 is already in use\u001b[39m","timestamp":"2026-02-07 11:59:30:5930"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 11:59:50:5950"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mPort 5001 is already in use\u001b[39m","timestamp":"2026-02-07 11:59:50:5950"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 11:59:59:5959"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mPort 5001 is already in use\u001b[39m","timestamp":"2026-02-07 11:59:59:5959"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 12:00:38:038"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mPort 5001 is already in use\u001b[39m","timestamp":"2026-02-07 12:00:38:038"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mDatabase initialized successfully\u001b[39m","timestamp":"2026-02-07 12:01:09:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mServer running on http://localhost:5001 in development mode\u001b[39m","timestamp":"2026-02-07 12:01:09:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mReceived SIGINT, shutting down gracefully\u001b[39m","timestamp":"2026-02-07 13:16:46:1646"}

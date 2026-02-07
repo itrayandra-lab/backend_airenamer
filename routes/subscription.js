@@ -198,9 +198,8 @@ router.post('/guest-transaction', [
       discount = yearlyPrice - finalPrice;
     }
 
-    // Add tax (11% PPN)
-    const tax = Math.round(finalPrice * 0.11);
-    const totalPrice = finalPrice + tax;
+    // Total price (no tax)
+    const totalPrice = finalPrice;
 
     // Generate unique order ID
     const orderId = `SUB-${Date.now()}-${user.id}-${tier_id}`;
@@ -260,16 +259,6 @@ router.post('/guest-transaction', [
       }
     };
 
-    // Add tax as separate item if applicable
-    if (tax > 0) {
-      transactionData.item_details.push({
-        id: 'tax-ppn',
-        price: tax,
-        quantity: 1,
-        name: 'PPN (11%)'
-      });
-    }
-
     // Create Midtrans transaction
     const snapTransaction = await snap.createTransaction(transactionData);
 
@@ -295,7 +284,6 @@ router.post('/guest-transaction', [
         tier: tier,
         billing_cycle: billing_cycle,
         discount: discount,
-        tax: tax,
         user: {
           id: user.id,
           first_name: user.first_name,
@@ -485,9 +473,8 @@ router.post('/create-transaction', [
       discount = yearlyPrice - finalPrice;
     }
 
-    // Add tax (11% PPN)
-    const tax = Math.round(finalPrice * 0.11);
-    const totalPrice = finalPrice + tax;
+    // Total price (no tax)
+    const totalPrice = finalPrice;
 
     // Generate unique order ID
     const orderId = `SUB-${Date.now()}-${req.user.id}-${tier_id}`;
@@ -547,16 +534,6 @@ router.post('/create-transaction', [
       }
     };
 
-    // Add tax as separate item if applicable
-    if (tax > 0) {
-      transactionData.item_details.push({
-        id: 'tax-ppn',
-        price: tax,
-        quantity: 1,
-        name: 'PPN (11%)'
-      });
-    }
-
     // Create Midtrans transaction
     const snapTransaction = await snap.createTransaction(transactionData);
 
@@ -581,8 +558,7 @@ router.post('/create-transaction', [
         amount: totalPrice,
         tier: tier,
         billing_cycle: billing_cycle,
-        discount: discount,
-        tax: tax
+        discount: discount
       }
     });
 

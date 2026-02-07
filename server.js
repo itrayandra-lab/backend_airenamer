@@ -17,6 +17,7 @@ require('./models');
 const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/user');
 const subscriptionRoutes = require('./routes/subscription');
+const twoFactorRoutes = require('./routes/twoFactor');
 
 // Import middleware
 const errorHandler = require('./middleware/errorHandler');
@@ -157,6 +158,7 @@ app.get('/health', (req, res) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/user', userRoutes);
 app.use('/api/subscription', subscriptionRoutes);
+app.use('/api/2fa', twoFactorRoutes);
 
 // Root endpoint
 app.get('/', (req, res) => {
