@@ -51,6 +51,7 @@ const corsOptions = {
   origin: function (origin, callback) {
     const allowedOrigins = [
       process.env.CORS_ORIGIN,
+      'https://autofile.raymaizing.com',
       'http://localhost:3000',
       'http://localhost:8080',
       'http://localhost:8081',
