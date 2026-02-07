@@ -26,55 +26,39 @@ const logger = require('./utils/logger');
 
 const app = express();
 
-// Trust proxy for rate limiting behind reverse proxy
+// Trust proxy for rate limiting behind reverse proxy (aaPanel/Nginx)
 app.set('trust proxy', 1);
 
-// Security middleware
+// Security middleware - Dioptimalkan untuk API Cross-Subdomain
 app.use(helmet({
-  contentSecurityPolicy: {
-    directives: {
-      defaultSrc: ["'self'"],
-      styleSrc: ["'self'", "'unsafe-inline'"],
-      scriptSrc: ["'self'"],
-      imgSrc: ["'self'", "data:", "https:"],
-    },
-  },
-  hsts: {
-    maxAge: 31536000,
-    includeSubDomains: true,
-    preload: true
-  }
+  crossOriginResourcePolicy: { policy: "cross-origin" },
+  contentSecurityPolicy: false // API biasanya tidak perlu CSP ketat seperti Frontend
 }));
 
-// CORS configuration
-const corsOptions = {
+// --- FIXED CORS CONFIGURATION ---
+const allowedOrigins = [
+  process.env.CORS_ORIGIN,
+  'https://autofile.raymaizing.com',
+  'https://raymaizing.com',
+  'http://localhost:3000',
+  'http://localhost:8080'
+].filter(Boolean);
+
+app.use(cors({
   origin: function (origin, callback) {
-    const allowedOrigins = [
-      process.env.CORS_ORIGIN,
-      'https://autofile.raymaizing.com',
-      'http://localhost:3000',
-      'http://localhost:8080',
-      'http://localhost:8081',
-      'http://127.0.0.1:8080',
-      'http://127.0.0.1:8081'
-    ];
-    
-    // Allow requests with no origin (mobile apps, etc.)
-    if (!origin) return callback(null, true);
-    
-    if (allowedOrigins.indexOf(origin) !== -1) {
+    // Izinkan jika tidak ada origin (Postman/Mobile) atau ada di list
+    if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
+      console.warn(`🚨 CORS Blocked for: ${origin}`);
       callback(new Error('Not allowed by CORS'));
     }
   },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
   exposedHeaders: ['X-Total-Count', 'X-Rate-Limit-Remaining']
-};
-
-app.use(cors(corsOptions));
+}));
 
 // Compression middleware
 app.use(compression());
@@ -84,74 +68,55 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 } else {
   app.use(morgan('combined', {
-    stream: {
-      write: (message) => logger.info(message.trim())
-    }
+    stream: { write: (message) => logger.info(message.trim()) }
   }));
 }
 
 // Rate limiting
 const limiter = rateLimit({
-  windowMs: parseInt(process.env.RATE_LIMIT_WINDOW) * 60 * 1000, // 15 minutes
-  max: process.env.NODE_ENV === 'development' ? 10000 : parseInt(process.env.RATE_LIMIT_MAX), // Much higher limit in development
-  message: {
-    error: 'Too many requests from this IP, please try again later.',
-    retryAfter: Math.ceil(parseInt(process.env.RATE_LIMIT_WINDOW) * 60)
-  },
+  windowMs: parseInt(process.env.RATE_LIMIT_WINDOW || 15) * 60 * 1000,
+  max: process.env.NODE_ENV === 'development' ? 10000 : parseInt(process.env.RATE_LIMIT_MAX || 1000),
   standardHeaders: true,
   legacyHeaders: false,
-  skip: (req) => process.env.NODE_ENV === 'development', // Skip rate limiting entirely in development
   handler: (req, res) => {
     logger.warn(`Rate limit exceeded for IP: ${req.ip}`);
     res.status(429).json({
       success: false,
-      message: 'Too many requests from this IP, please try again later.',
-      retryAfter: Math.ceil(parseInt(process.env.RATE_LIMIT_WINDOW) * 60)
+      message: 'Too many requests, please try again later.'
     });
   }
 });
-
 app.use(limiter);
 
-// Slow down repeated requests
+// --- FIXED SLOW DOWN (v2.x Syntax) ---
 const speedLimiter = slowDown({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  delayAfter: 50, // allow 50 requests per 15 minutes at full speed
-  delayMs: 500, // slow down subsequent requests by 500ms per request
-  maxDelayMs: 20000, // maximum delay of 20 seconds
+  windowMs: 15 * 60 * 1000,
+  delayAfter: 50,
+  delayMs: (used, req) => {
+    const delayAfter = req.slowDown.limit;
+    return (used - delayAfter) * 500;
+  },
+  maxDelayMs: 20000,
 });
-
 app.use(speedLimiter);
 
 // Body parsing middleware
 app.use(express.json({ 
   limit: '10mb',
   verify: (req, res, buf) => {
-    try {
-      JSON.parse(buf);
-    } catch (e) {
-      res.status(400).json({
-        success: false,
-        message: 'Invalid JSON format'
-      });
-      return;
+    try { JSON.parse(buf); } catch (e) {
+      res.status(400).json({ success: false, message: 'Invalid JSON format' });
     }
   }
 }));
-
-app.use(express.urlencoded({ 
-  extended: true, 
-  limit: '10mb' 
-}));
+app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
 // Health check endpoint
 app.get('/health', (req, res) => {
   res.status(200).json({
     success: true,
-    message: 'Server is healthy',
-    timestamp: new Date().toISOString(),
-    uptime: process.uptime(),
-    environment: process.env.NODE_ENV
+    environment: process.env.NODE_ENV,
+    uptime: process.uptime()
   });
 });
 
@@ -163,117 +128,39 @@ app.use('/api/2fa', twoFactorRoutes);
 
 // Root endpoint
 app.get('/', (req, res) => {
-  res.json({
-    success: true,
-    message: 'RAYMAIZING API Server',
-    version: '1.0.0',
-    documentation: '/api/docs',
-    health: '/health'
-  });
+  res.json({ success: true, message: 'RAYMAIZING API Server Online' });
 });
 
-// 404 handler
+// 404 & Error Handler
 app.use(notFound);
-
-// Error handling middleware
 app.use(errorHandler);
 
-// Database connection and initialization
+// Database Initialization
 const initializeDatabase = async () => {
   try {
-    // Test database connection
     const isConnected = await testConnection();
-    if (!isConnected) {
-      throw new Error('Failed to connect to database');
-    }
-
-    // Sync database (create tables if they don't exist)
-    const isSynced = await syncDatabase(false); // Set to true to force recreate tables
-    if (!isSynced) {
-      throw new Error('Failed to sync database');
-    }
-
-    logger.info('Database initialized successfully');
-    console.log('✅ Database initialized successfully');
+    if (!isConnected) throw new Error('Database connection failed');
+    await syncDatabase(false); 
+    console.log('✅ Database initialized');
     return true;
   } catch (error) {
-    logger.error('Database initialization error:', error);
-    console.error('❌ Database initialization error:', error);
+    console.error('❌ Database error:', error);
     return false;
   }
 };
 
-// Graceful shutdown
-process.on('SIGINT', async () => {
-  logger.info('Received SIGINT, shutting down gracefully');
-  console.log('\n🔄 Shutting down gracefully...');
-  
-  try {
-    await sequelize.close();
-    logger.info('Database connection closed');
-    console.log('✅ Database connection closed');
-    process.exit(0);
-  } catch (error) {
-    logger.error('Error during shutdown:', error);
-    console.error('❌ Error during shutdown:', error);
-    process.exit(1);
-  }
-});
+// Start Server
+const PORT = process.env.PORT || 5001;
+const HOST = process.env.HOST || '0.0.0.0';
 
-process.on('SIGTERM', async () => {
-  logger.info('Received SIGTERM, shutting down gracefully');
-  await sequelize.close();
-  process.exit(0);
-});
-
-// Handle uncaught exceptions
-process.on('uncaughtException', (error) => {
-  logger.error('Uncaught Exception:', error);
-  console.error('❌ Uncaught Exception:', error);
-  process.exit(1);
-});
-
-process.on('unhandledRejection', (reason, promise) => {
-  logger.error('Unhandled Rejection at:', promise, 'reason:', reason);
-  console.error('❌ Unhandled Rejection:', reason);
-  process.exit(1);
-});
-
-const PORT = process.env.PORT || 5000;
-const HOST = process.env.HOST || 'localhost';
-
-// Initialize database and start server
 const startServer = async () => {
-  const isDatabaseReady = await initializeDatabase();
-  
-  if (!isDatabaseReady) {
-    console.error('❌ Failed to initialize database. Exiting...');
-    process.exit(1);
+  if (await initializeDatabase()) {
+    app.listen(PORT, HOST, () => {
+      console.log(`🚀 Server running on http://${HOST}:${PORT}`);
+    });
   }
-
-  const server = app.listen(PORT, HOST, () => {
-    logger.info(`Server running on http://${HOST}:${PORT} in ${process.env.NODE_ENV} mode`);
-    console.log(`🚀 Server running on http://${HOST}:${PORT}`);
-    console.log(`📝 Environment: ${process.env.NODE_ENV}`);
-    console.log(`🔒 Security: Enabled`);
-    console.log(`📊 Rate Limiting: ${process.env.RATE_LIMIT_MAX} requests per ${process.env.RATE_LIMIT_WINDOW} minutes`);
-    console.log(`💾 Database: MySQL (${process.env.DB_HOST}:${process.env.DB_PORT})`);
-  });
-
-  // Handle server errors
-  server.on('error', (error) => {
-    if (error.code === 'EADDRINUSE') {
-      logger.error(`Port ${PORT} is already in use`);
-      console.error(`❌ Port ${PORT} is already in use`);
-    } else {
-      logger.error('Server error:', error);
-      console.error('❌ Server error:', error);
-    }
-    process.exit(1);
-  });
 };
 
-// Start the server
 startServer();
 
 module.exports = app;
